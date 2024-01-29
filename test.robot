@@ -42,6 +42,9 @@ Input Email
     [Arguments]    ${email}
     Input Text    //*[@id="form"]/div/div/div[3]/div/form/input[3]    ${email}
 
+Checked sub Button
+    Click Element    //*[@id="form"]/div/div/div[3]/div/form/button
+
 *** Test Cases ***
 
 Search Products Verify Cart After Login
@@ -60,6 +63,7 @@ Search Products Verify Cart After Login
     Checked SL Button
     Input name    ${name}
     Input Email    ${email}
+    Checked sub Button
 
 
 
