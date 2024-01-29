@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-29T10:40:14.489814" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="d:\65022645\test.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-29T10:40:14.608417" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com'.</msg>
+<arg>http://automationexercise.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T10:40:14.608417" elapsed="6.835608"/>
+</kw>
+<test id="s1-t1" name="Search Products" line="47">
+<kw name="Checked Products Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:21.446021" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:21.445024" elapsed="1.864712"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:40:21.445024" elapsed="1.864712"/>
+</kw>
+<kw name="Input search_product">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:23.311730" level="INFO">Typing text 'Dress' into text field '//*[@id="search_product"]'.</msg>
+<arg>//*[@id="search_product"]</arg>
+<arg>${search_product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:23.310733" elapsed="0.062513"/>
+</kw>
+<arg>${search_product}</arg>
+<status status="PASS" start="2024-01-29T10:40:23.310733" elapsed="0.063514"/>
+</kw>
+<kw name="Checked Search Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:23.375244" level="INFO">Clicking element '//*[@id="submit_search"]'.</msg>
+<arg>//*[@id="submit_search"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:23.375244" elapsed="0.856866"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:40:23.374247" elapsed="0.857863"/>
+</kw>
+<kw name="Checked Cart Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:24.234107" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[3]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:24.233110" elapsed="0.620050"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:40:24.233110" elapsed="0.620050"/>
+</kw>
+<kw name="Checked SL Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:24.855153" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:24.854168" elapsed="20.101858"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:40:24.854168" elapsed="20.101858"/>
+</kw>
+<kw name="Input name">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:44.958023" level="INFO">Typing text 'aaa' into text field '//*[@id="form"]/div/div/div[3]/div/form/input[2]'.</msg>
+<arg>//*[@id="form"]/div/div/div[3]/div/form/input[2]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:44.957063" elapsed="0.049796"/>
+</kw>
+<arg>${name}</arg>
+<status status="PASS" start="2024-01-29T10:40:44.957063" elapsed="0.050793"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:45.008854" level="INFO">Typing text 'uuu@gmail.com' into text field '//*[@id="form"]/div/div/div[3]/div/form/input[3]'.</msg>
+<arg>//*[@id="form"]/div/div/div[3]/div/form/input[3]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:45.008854" elapsed="0.083208"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2024-01-29T10:40:45.007856" elapsed="0.084206"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:40:21.444025" elapsed="23.648037"/>
+</test>
+<doc>This is a sample test suite using Robot Framework</doc>
+<status status="PASS" start="2024-01-29T10:40:14.492803" elapsed="30.601253"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

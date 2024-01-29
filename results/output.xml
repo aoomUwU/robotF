@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-29T09:56:56.766181" rpa="false" schemaversion="5">
+<suite id="s1" name="65022645" source="D:\65022645">
+<suite id="s1-s1" name="Test" source="D:\65022645\test.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-29T09:56:56.880797" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com'.</msg>
+<arg>http://automationexercise.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T09:56:56.880797" elapsed="6.214195"/>
+</kw>
+<test id="s1-s1-t1" name="Search Products" line="25">
+<kw name="Checked Products Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T09:57:03.096987" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T09:57:03.096987" elapsed="7.588063"/>
+</kw>
+<status status="PASS" start="2024-01-29T09:57:03.095991" elapsed="7.590056"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T09:57:10.700997" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF764402142+3514994]
+	(No symbol) [0x00007FF764020CE2]
+	(No symbol) [0x00007FF763EC76AA]
+	(No symbol) [0x00007FF763EA0AFD]
+	(No symbol) [0x00007FF763F3CB1B]
+	(No symbol) [0x00007FF763F5218F]
+	(No symbol) [0x00007FF763F35D93]
+	(No symbol) [0x00007FF763F04BDC]
+	(No symbol) [0x00007FF763F05C64]
+	GetHandleVerifier [0x00007FF76442E16B+3695259]
+	GetHandleVerifier [0x00007FF764486737+4057191]
+	GetHandleVerifier [0x00007FF76447E4E3+4023827]
+	GetHandleVerifier [0x00007FF7641504F9+689705]
+	(No symbol) [0x00007FF76402C048]
+	(No symbol) [0x00007FF764028044]
+	(No symbol) [0x00007FF7640281C9]
+	(No symbol) [0x00007FF7640188C4]
+	BaseThreadInitThunk [0x00007FF8DAFF7034+20]
+	RtlUserThreadStart [0x00007FF8DCE226A1+33]
+</msg>
+<msg time="2024-01-29T09:57:10.705981" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF764402142+3514994]
+	(No symbol) [0x00007FF764020CE2]
+	(No symbol) [0x00007FF763EC76AA]
+	(No symbol) [0x00007FF763EA0AFD]
+	(No symbol) [0x00007FF763F3CB1B]
+	(No symbol) [0x00007FF763F5218F]
+	(No symbol) [0x00007FF763F35D93]
+	(No symbol) [0x00007FF763F04BDC]
+	(No symbol) [0x00007FF763F05C64]
+	GetHandleVerifier [0x00007FF76442E16B+3695259]
+	GetHandleVerifier [0x00007FF764486737+4057191]
+	GetHandleVerifier [0x00007FF76447E4E3+4023827]
+	GetHandleVerifier [0x00007FF7641504F9+689705]
+	(No symbol) [0x00007FF76402C048]
+	(No symbol) [0x00007FF764028044]
+	(No symbol) [0x00007FF7640281C9]
+	(No symbol) [0x00007FF7640188C4]
+	BaseThreadInitThunk [0x00007FF8DAFF7034+20]
+	RtlUserThreadStart [0x00007FF8DCE226A1+33]
+</msg>
+<arg>/html/body/section[2]/div[1]/div/div[2]/div/h2/text()</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2024-01-29T09:57:10.686047" elapsed="0.022923">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF764402142+3514994]
+	(No symbol) [0x00007FF764020CE2]
+	(No symbol) [0x00007FF763EC76AA]
+	(No symbol) [0x00007FF763EA0AFD]
+	(No symbol) [0x00007FF763F3CB1B]
+	(No symbol) [0x00007FF763F5218F]
+	(No symbol) [0x00007FF763F35D93]
+	(No symbol) [0x00007FF763F04BDC]
+	(No symbol) [0x00007FF763F05C64]
+	GetHandleVerifier [0x00007FF76442E16B+3695259]
+	GetHandleVerifier [0x00007FF764486737+4057191]
+	GetHandleVerifier [0x00007FF76447E4E3+4023827]
+	GetHandleVerifier [0x00007FF7641504F9+689705]
+	(No symbol) [0x00007FF76402C048]
+	(No symbol) [0x00007FF764028044]
+	(No symbol) [0x00007FF7640281C9]
+	(No symbol) [0x00007FF7640188C4]
+	BaseThreadInitThunk [0x00007FF8DAFF7034+20]
+	RtlUserThreadStart [0x00007FF8DCE226A1+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-01-29T09:57:03.094992" elapsed="7.613978">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF764402142+3514994]
+	(No symbol) [0x00007FF764020CE2]
+	(No symbol) [0x00007FF763EC76AA]
+	(No symbol) [0x00007FF763EA0AFD]
+	(No symbol) [0x00007FF763F3CB1B]
+	(No symbol) [0x00007FF763F5218F]
+	(No symbol) [0x00007FF763F35D93]
+	(No symbol) [0x00007FF763F04BDC]
+	(No symbol) [0x00007FF763F05C64]
+	GetHandleVerifier [0x00007FF76442E16B+3695259]
+	GetHandleVerifier [0x00007FF764486737+4057191]
+	GetHandleVerifier [0x00007FF76447E4E3+4023827]
+	GetHandleVerifier [0x00007FF7641504F9+689705]
+	(No symbol) [0x00007FF76402C048]
+	(No symbol) [0x00007FF764028044]
+	(No symbol) [0x00007FF7640281C9]
+	(No symbol) [0x00007FF7640188C4]
+	BaseThreadInitThunk [0x00007FF8DAFF7034+20]
+	RtlUserThreadStart [0x00007FF8DCE226A1+33]
+</status>
+</test>
+<doc>This is a sample test suite using Robot Framework</doc>
+<status status="FAIL" start="2024-01-29T09:56:56.781131" elapsed="13.931826"/>
+</suite>
+<status status="FAIL" start="2024-01-29T09:56:56.768178" elapsed="13.945775"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="65022645">65022645</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test">65022645.Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-01-29T09:57:10.700997" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF764402142+3514994]
+	(No symbol) [0x00007FF764020CE2]
+	(No symbol) [0x00007FF763EC76AA]
+	(No symbol) [0x00007FF763EA0AFD]
+	(No symbol) [0x00007FF763F3CB1B]
+	(No symbol) [0x00007FF763F5218F]
+	(No symbol) [0x00007FF763F35D93]
+	(No symbol) [0x00007FF763F04BDC]
+	(No symbol) [0x00007FF763F05C64]
+	GetHandleVerifier [0x00007FF76442E16B+3695259]
+	GetHandleVerifier [0x00007FF764486737+4057191]
+	GetHandleVerifier [0x00007FF76447E4E3+4023827]
+	GetHandleVerifier [0x00007FF7641504F9+689705]
+	(No symbol) [0x00007FF76402C048]
+	(No symbol) [0x00007FF764028044]
+	(No symbol) [0x00007FF7640281C9]
+	(No symbol) [0x00007FF7640188C4]
+	BaseThreadInitThunk [0x00007FF8DAFF7034+20]
+	RtlUserThreadStart [0x00007FF8DCE226A1+33]
+</msg>
+</errors>
+</robot>
