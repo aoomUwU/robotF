@@ -44,7 +44,7 @@ Input Email
 
 *** Test Cases ***
 
-Search Products 
+Search Products Verify Cart After Login
     Checked Products Button
     #Page Should Contain Element    /html/body/section[2]/div[1]/div/div[2]/div/h2
     
@@ -62,5 +62,5 @@ Search Products
     Input Email    ${email}
 
 
-Verify Cart After Login
+
  
